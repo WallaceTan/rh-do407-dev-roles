@@ -10,4 +10,7 @@ Page 249 lab: ansible-galaxy
 ```
 $ ansible-galaxy install -p roles -r install-role.yml
 $ ansible-galaxy init --offline -p roles empty.example
+
+$ md5sum roles/student.bash_env/templates/*
+$ ssh servera md5sum /etc/skel/{.bash_profile,.bashrc,.vimrc}
 ```
